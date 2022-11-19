@@ -1,10 +1,10 @@
 :root {
-  --white: hsl(0, 0%, 100%);
-  --light-grey: hsl(217, 12%, 63%);
-  --medium-grey: hsl(216, 12%, 54%);
-  --dark-blue: hsl(213, 19%, 18%);
-  --very-dark-blue: hsl(216, 12%, 8%);
-  --orange: hsl(25, 97%, 53%);
+  --orange: #fe7613;
+  --white: #ffffff;
+  --light-grey: #818994;
+  --medium-grey: #262f38;
+  --dark-blue: #1e252f;
+  --very-dark-blue: #141519;
 }
 
 h2 {
@@ -26,7 +26,7 @@ body {
 
 .star-icon {
   width: 20px;
-  background: hsl(217, 12%, 63%);
+  background: var(--medium-grey);
   padding: 0.7em;
   border-radius: 50%;
 }
@@ -36,14 +36,14 @@ body {
 }
 
 .card {
+  background: linear-gradient(var(--dark-blue), var(--dark-blue));
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 350px;
-  background: hsl(213, 19%, 18%);
   border-radius: 10%;
-  padding: 10px;
+  padding: 30px;
 }
 
 .title {
@@ -88,6 +88,7 @@ body {
   border-radius: 20px;
   border-style: none;
   height: 40px;
+  color: var(--white);
   background-color: var(--orange);
   font-weight: 700;
 }
@@ -123,7 +124,7 @@ body {
   border-radius: 30px;
   color: var(--orange);
   background-color: var(--white);
-  padding: 0.1em 0.7em;
+  padding: 0.1rem 0.7rem;
 }
 
 .thank-you-text {
